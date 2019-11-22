@@ -16,7 +16,7 @@
 			let gender;
 				for(let i=0; i<ele.length;i++){
 					if(ele[i].checked){
-						gender= ele[i].value;
+					gender= ele[i].value;
 					}
 				}
 			let obj={
@@ -26,15 +26,13 @@
 						'email':email,
 						'education':education,
 						'about':about
-					};		
+				};
+		
 			arr.push(obj);
 			localStorage.setItem('key'+localStorage.length,JSON.stringify(arr));
 			arr=[];		
-			
-			
 }
 </script>	
-
 </head>
 <body>
 	<form name="myForm" onsubmit="return validationForm()">
@@ -54,7 +52,7 @@
 			<tr>
 				<th>Gender</th>
 				<td><input type="radio" id="male" name="gender" value="male" required="">Male
-					<input type="radio" id="female" name="gender" value="female" required="">Female</td>
+				<input class="radio" type="radio" id="female" name="gender" value="female" required="">Female</td>
 			</tr>
 
 			<tr>
@@ -78,7 +76,6 @@
 
 		</table>
 	</form>	
-
 </body>
 </html>
 
