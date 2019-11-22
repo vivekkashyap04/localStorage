@@ -36,7 +36,7 @@ th{
 	color:white;
 	padding:5px;
 	margin:10px 0px;
-	font-size:14px; 
+	font-size:18px; 
 	cursor:pointer;
 }
 input ,textarea{
@@ -47,4 +47,7 @@ input ,textarea{
 }
 textarea{
 	width:90%;
+}
+.radio{
+	margin-left:10px;
 }
