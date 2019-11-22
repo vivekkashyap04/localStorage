@@ -4,6 +4,7 @@ body{
 	font-family: san-serif;
 	background: url(image.jpg) no-repeat;
 	background-size:cover;
+	opacity:0.9;
 }
 table {
 	width:280px;
@@ -17,6 +18,10 @@ table {
 tr{
 	border-bottom:1px solid;
 }
+th{
+	font-size:20px;
+	font-style:italic;
+}	
 .heading{
 	float: :left;
 	margin-bottom:50px;
