@@ -12,7 +12,7 @@
 			let email=document.getElementById("email").value;
 			let education=document.getElementById("education").value;
 			let about=document.getElementById("about").value;
-			let gender=document.getElementsByName("gender").value;
+			let gender=document.getElementsByName("gender");
 				for(let i=0; i<gender.length;i++){
 					if(gender[i].checked){
 						return gender[i].value;
