@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>	
+	<link rel="stylesheet" href="myStyle.css" type="text/css">
+<script>
+	let arr=[];
+	function storingLocalData(){
+			let name=document.getElementById("name").value;
+			let age=document.getElementById("age").value;
+			let email=document.getElementById("email").value;
+			let education=document.getElementById("education").value;
+			let about=document.getElementById("about").value;
+			let ele=document.getElementsByName("gender");
+			let gender;
+				for(let i=0; i<ele.length;i++){
+					if(ele[i].checked){
+						gender= ele[i].value;
+					}
+				}
+			let obj={
+						'name':name,
+						'age':age,
+						'gender':gender,
+						'email':email,
+						'education':education,
+						'about':about
+					};		
+			arr.push(obj);
+			localStorage.setItem('key'+localStorage.length,JSON.stringify(arr));
+			arr=[];		
+			
+			
+}
+</script>	
+
+</head>
+<body>
+	<form name="myForm" onsubmit="return validationForm()">
+		<table>
+			<tr>
+				<th align="center" class="heading" colspan="2">Personel Detail</th>
+			<tr>
+				<th class="tableLabel">Name</th>
+				<td><input type="text" id="name" name="name" value="" required=""></td>
+			</tr>
+
+			<tr>
+				<th class="tableLabel">Age</th>
+				<td><input type="number" id="age" name="age" value="" required=""></td>
+			</tr>
+
+			<tr>
+				<th>Gender</th>
+				<td><input type="radio" id="male" name="gender" value="male" required="">Male
+					<input type="radio" id="female" name="gender" value="female" required="">Female</td>
+			</tr>
+
+			<tr>
+				<th>Email</th>
+				<td><input type="email" id="email" name="email" value="" required=""></td>
+			</tr>
+
+			<tr>
+				<th>Education</th>
+				<td><input type="text" id="education" name="education" required=""></td>
+			</tr>
+
+			<tr>
+				<th>About me</th>
+				<td><textarea id="about" required=""></textarea></td>
+			</tr>
+
+			<tr>
+				<td colspan="2"><input type="submit" class="btn" id="submit" name="submit" value="Submit" onclick="storingLocalData()" ></td>
+			</tr>
+
+		</table>
+	</form>	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+	.

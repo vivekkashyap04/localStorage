@@ -1,0 +1,45 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: san-serif;
+	background: url(image.jpg) no-repeat;
+	background-size:cover;
+}
+table {
+	width:280px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color:white;
+}
+
+tr{
+	border-bottom:1px solid;
+}
+.heading{
+	float: :left;
+	margin-bottom:50px;
+	width:100%;
+	font-size: 30px;
+	padding: 15px 0;
+}
+.btn{
+	width:100%;
+	background:none;
+	border:2px solid #4caf50;
+	color:white;
+	padding:5px;
+	margin:10px 0px;
+	font-size:14px; 
+	cursor:pointer;
+}
+input ,textarea{
+	border-radius:10px;
+	overflow:hidden;
+	padding:5px 0;
+	margin:5px 0;
+}
+textarea{
+	width:90%;
+}
